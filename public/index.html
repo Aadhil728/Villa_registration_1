@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Villa Exhibition Registration</title>
+    <link rel="stylesheet" href="./Styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="/api/placeholder/150/80" alt="Exhibition Logo" class="logo" />
+      <h1>Villa Exhibition Registration</h1>
+    </header>
+
+    <div class="container">
+      <form id="registrationForm">
+        <div class="form-group">
+          <label for="name">Full Name*</label>
+          <input type="text" id="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address*</label>
+          <input type="email" id="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" />
+        </div>
+
+        <div class="form-group">
+          <label for="interest">I'm interested in*</label>
+          <select id="interest" required>
+            <option value="">-- Please select --</option>
+            <option value="buying">Buying a villa</option>
+            <option value="investing">Investment opportunities</option>
+            <option value="information">Just looking for information</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="preferences">Preferred villa type</label>
+          <select id="preferences">
+            <option value="">-- Please select --</option>
+            <option value="type1">Type A - 3 Bedroom</option>
+            <option value="type2">Type B - 4 Bedroom</option>
+            <option value="type3">Type C - 5 Bedroom Luxury</option>
+            <option value="notSure">Not sure yet</option>
+          </select>
+        </div>
+
+        <div class="form-group checkbox-group">
+          <input type="checkbox" id="newsletter" checked />
+          <label for="newsletter"
+            >I'd like to receive updates about the villas and future
+            exhibitions</label
+          >
+        </div>
+
+        <div class="form-group checkbox-group">
+          <input type="checkbox" id="terms" required />
+          <label for="terms">I agree to the terms and conditions*</label>
+        </div>
+
+        <button type="submit">Register Now</button>
+      </form>
+
+      <div class="thank-you" id="thankYouMessage">
+        <h2>Thank You for Registering!</h2>
+        <p>Your information has been submitted successfully.</p>
+        <p>Our team will be in touch with you shortly.</p>
+        <p>Feel free to continue exploring the exhibition.</p>
+      </div>
+
+      <div class="villa-preview">
+        <h3>Featured Villa</h3>
+        <img src="/api/placeholder/400/320" alt="Villa Preview" />
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2025 Villa Exhibition. All rights reserved.</p>
+      <p>Exhibition dates: April 28 - May 1, 2025</p>
+    </footer>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

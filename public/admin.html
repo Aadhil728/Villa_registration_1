@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Admin - Villa Exhibition</title>
+    <link rel="stylesheet" href="./Styles/adminStyle.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Villa Exhibition Registration Data</h1>
+    </header>
+
+    <div class="container">
+      <div class="status" id="statusMessage"></div>
+
+      <div class="controls">
+        <div>
+          <button id="refreshData">Refresh Data</button>
+          <button id="exportCSV">Export to CSV</button>
+        </div>
+        <div><span id="registrationCount">0</span> registrations</div>
+      </div>
+
+      <table id="registrationsTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Interest</th>
+            <th>Preference</th>
+            <th>Newsletter</th>
+            <th>Timestamp</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Data will be loaded here -->
+        </tbody>
+      </table>
+    </div>
+
+    <script src="./scripts/adminScript.js"></script>
+  </body>
+</html>
